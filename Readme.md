@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Артем Высоцкий](https://up.htmlacademy.ru/adaptive/20/user/1463899).
-* Наставник: `Неизвестно`.
+- Студент: [Артем Высоцкий](https://up.htmlacademy.ru/adaptive/20/user/1463899).
+- Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545)
 
 ---
 
