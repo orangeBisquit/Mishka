@@ -1,9 +1,8 @@
 .page-body {
   display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
