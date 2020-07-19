@@ -1,9 +1,16 @@
 .page-body {
   display: grid;
+<<<<<<< HEAD
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+=======
+>>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
   grid-template-rows: min-content 1fr min-content;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   font-family: "Open Sans", Arial, sans-serif;
+=======
+  font-family: "Open Sans", "Arial", sans-serif;
+>>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .visually-hidden:not(:focus):not(:active) {
+=======
+.visually-hidden {
+>>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
 	position: absolute;
 	margin: -1px;
 	border: 0;
@@ -7,7 +11,10 @@
 	height: 1px;
 	overflow: hidden;
 	white-space: nowrap;
+<<<<<<< HEAD
 	-webkit-clip-path: inset(100%);
+=======
+>>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 }

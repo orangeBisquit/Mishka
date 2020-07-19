@@ -8,6 +8,7 @@
 
 <body class="page-body">
 
+<<<<<<< HEAD
   <header class="header page-body__header">
     <a class="header__logo logo">
       <img src="https://via.placeholder.com/86x150" alt="Логотип магазина Mishka" class="header__logo-img" width="150"
@@ -29,10 +30,34 @@
         </li>
         <li class="supplementary-list__item">
           <a href="cart.html" class="site-list__link">Корзина: пока пуста</a>
+=======
+  <header class="header">
+    <a class="header__logo logo" href="index.html">
+      <img class="header__logo-img" src="https://via.placeholder.com/86x150" alt="Логотип магазина Mishka" width="150"
+        height="35">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle-close" type="button" aria-label="Открыть/Закрыть навигацию по сайту"></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list site-list site-list--supplementary">
+        <li class="site-list__item">
+          <a class="site-list__link" href="search.html">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="cart.html">Корзина: пока пуста</a>
+>>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
         </li>
       </ul>
     </nav>
   </header>
+<<<<<<< HEAD
   <footer class="footer page-body__footer">
     <div class="footer__social social">
       <ul class="social__list">
@@ -53,3 +78,128 @@
         aria-label="Ссылка на сайт HTML Academy"></a>
     </div>
   </footer>
+=======
+  <main>
+    <section class="content-header">
+      <h1 class="content-header__title">Вязание на заказ</h1>
+    </section>
+    <section class="order-custom">
+      <p class="order-custom__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа
+        и мы свяжемся с вами, чтобы уточнить
+        детали.</p>
+      <form class="order-custom__form form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__category">
+          <legend class="form__legend">Тип</legend>
+          <p class="form__option">
+            <input class="form__option-input" id="interior-items" type="radio" value="interior-items"
+              name="product-type" checked>
+            <label class="form__option-label" for="interior-items">Аксессуар для интерьера</label>
+          </p>
+          <p class="form__option">
+            <input class="form__option-input" id="kids-toys" type="radio" value="kids-toys" name="product-type">
+            <label class="form__option-label" for="kids-toys">Детская игрушка</label>
+          </p>
+        </fieldset>
+        <fieldset class="form__category">
+          <legend class="form__legend">Цвет</legend>
+          <p class="form__option">
+            <input class="form__option-input" id="color-white" type="checkbox" value="white" name="product-color"
+              checked>
+            <label class="form__option-label" for="color-white">Белый</label>
+          </p>
+          <p class="form__option">
+            <input class="form__option-input" id="color-grey" type="checkbox" value="grey" name="product-color" checked>
+            <label class="form__option-label" for="color-grey">Серый</label>
+          </p>
+          <p class="form__option">
+            <input class="form__option-input" id="color-tiffany" type="checkbox" value="tiffany" name="product-color">
+            <label class="form__option-label" for="color-tiffany">«Тиффани»</label>
+          </p>
+          <p class="form__option">
+            <input class="form__option-input" id="color-black" type="checkbox" value="black" name="product-color">
+            <label class="form__option-label" for="color-black">Черный</label>
+          </p>
+          <p class="form__option">
+            <input class="form__option-input" id="color-pink" type="checkbox" value="pink" name="product-color">
+            <label class="form__option-label" for="color-pink">Розовый</label>
+          </p>
+          <p class="form__option">
+            <input class="form__option-input" id="color-orange" type="checkbox" value="orange" name="product-color">
+            <label class="form__option-label" for="color-orange">Оранжевый</label>
+          </p>
+        </fieldset>
+        <fieldset class="form__category">
+          <legend class="form__legend">ФИО</legend>
+          <p class="form__customer-data">
+            <label class="form__customer-label" for="first-name">Имя:</label>
+            <input class="form__customer-input" id="first-name" type="text" name="first-name"
+              placeholder="Введите ваше имя*" required>
+          </p>
+          <p class="form__customer-data">
+            <label class="form__customer-label" for="last-name">Фамилия:</label>
+            <input class="form__customer-input" id="last-name" type="text" name="last-name"
+              placeholder="Укажите фамилию*" required>
+          </p>
+          <p class="form__customer-data">
+            <label class="form__customer-label" for="middle-name">Отчество:</label>
+            <input class="form__customer-input" id="middle-name" type="text" name="middle-name"
+              placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+        <fieldset class="form__category">
+          <legend class="form__legend">Тел</legend>
+          <p class="form__customer-data">
+            <label class="visually-hidden" for="customer-phone">Телефон:</label>
+            <input class="form__customer-input form__customer-input--phone" id="customer-phone" type="tel"
+              name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </p>
+        </fieldset>
+        <fieldset class="form__category">
+          <legend class="form__legend">E-mail</legend>
+          <p class="form__customer-data">
+            <label class="visually-hidden" for="customer-email">Email:</label>
+            <input class="form__customer-input form__customer-input--email" id="customer-email" type="email"
+              name="customer-email" placeholder="Ваш Email*" required>
+          </p>
+        </fieldset>
+        <fieldset class="form__category">
+          <legend class="form__legend">Доп</legend>
+          <p class="form__customer-data">
+            <label class="visually-hidden" for="customer-message">Дополнительная информация:</label>
+            <textarea class="form__customer-input" id="customer-message" name="customer-message"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
+        </fieldset>
+        <small class="form__extra-info">*Поля обязательны для заполнения</small>
+        <button class="form__button-submit button" type="submit">Отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item social__item--instagram">
+          <a class="social__link" href="#" aria-label="Магазин Mishka в Instagram"></a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a class="social__link" href="#" aria-label="Магазин Mishka в Facebook"></a>
+        </li>
+        <li class="social__item social__item--twitter">
+          <a class="social__link" href="#" aria-label="Магазин Mishka в Twitter"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Ссылка на сайт HTML Academy">
+        <span class="copyright__text">Разработано</span>
+        <img class="copyryght__logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27"
+          height="34">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
+>>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
