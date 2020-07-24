@@ -1,14 +1,8 @@
 .logo {
-  display: inline-block;
-  vertical-align: middle;
   &:hover {
     opacity: 0.6;
   }
   &:active {
     opacity: 0.3;
   }
-}
-.logo__img {
-  width: 150px;
-  height: 35px;
 }
