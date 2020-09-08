@@ -1,0 +1,126 @@
+.about-us {
+  margin: 0 auto;
+  padding-top: 31px;
+  width: $content-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 52px;
+    width: $content-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    padding-bottom: 58px;
+    padding-left: 175px;
+    width: $content-desktop;
+  }
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 350px 350px;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.about-us__item {
+  position: relative;
+  margin-bottom: 29px;
+  padding-top: 54px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $text-color-dark;
+
+  &::before {
+    @include beforeafter;
+    top: -2px;
+    left: -4px;
+    width: 55px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--eco {
+    &::before {
+      background-image: url("../../img/icon-feature-flower.svg");
+      background-size: 33px 38px;
+    }
+  }
+
+  &--scandinavian {
+    &::before {
+      top: -7px;
+      background-image: url("../../img/icon-feature-money.svg");
+      background-size: 47px 27px;
+    }
+  }
+
+  &--likes {
+    &::before {
+      background-image: url("../../img/icon-feature-heart.svg");
+      background-size: 34px 27px;
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-row-start: 3;
+    }
+  }
+
+  &--handmade {
+    &::before {
+      background-image: url("../../img/icon-feature-ball.svg");
+      background-size: 35px 34px;
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-row-start: 1;
+      grid-column-start: 2;
+    }
+  }
+
+  &--domestic {
+    &::before {
+      top: -7px;
+      left: -6px;
+      background-image: url("../../img/icon-feature-rocket.svg");
+      background-size: 55px 23px;
+    }
+  }
+
+  &--gift-wrap {
+    &::before {
+      left: -8px;
+      background-image: url("../../img/icon-feature-gift.svg");
+      background-size: 33px 32px;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

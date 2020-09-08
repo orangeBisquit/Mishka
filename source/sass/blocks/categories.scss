@@ -1,0 +1,142 @@
+.categories__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: $content-header-bg;
+
+    &::before {
+      @include beforeafter;
+      z-index: 10;
+      bottom: -1px;
+      width: 100vw;
+      height: 24px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-size: auto 23px;
+      background-repeat: repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      bottom: -6px;
+      height: 34px;
+      background-size: 1150px 34px;
+      background-position: -10px;
+    }
+  }
+}
+
+.categories__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: $content-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $content-desktop;
+  }
+}
+
+.categories__item {
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+
+    &:hover {
+      padding-top: 0;
+    }
+  }
+}
+
+.categories__link {
+  position: relative;
+  display: block;
+  padding: 24px 0 31px;
+  padding-left: 20px;
+  width: 100vw;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $bg-color;
+  text-decoration: none;
+  transition-duration: 0.3s;
+
+  &::before {
+    @include beforeafter;
+    top: 22px;
+    right: 36px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  &--interior-items {
+    background-color: $main-color;
+
+    &:hover,
+    &:active {
+      background-color: $main-color-hover;
+    }
+
+    &::before {
+      width: 40px;
+      height: 62px;
+      background-image: url("../../img/icon-interior.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
+    }
+  }
+
+  &--toys {
+    background-color: $main-color-dark;
+
+    &:hover,
+    &:active {
+      background-color: $main-color-dark-hover;
+    }
+
+    &::before {
+      top: 20px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/icon-toy.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 31px;
+        right: 35px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 0 44px 18px;
+    width: auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.categories__link-inner {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 18px;
+  }
+}

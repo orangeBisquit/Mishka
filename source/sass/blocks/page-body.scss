@@ -3,7 +3,20 @@
   grid-template-rows: min-content 1fr min-content;
   margin: 0;
   padding: 0;
-  width: 320px;
+  width: 100vw;
+  overflow-x: hidden;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $text-color;
+}
+
+.page-body__header {
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.page-body__content-header {
+  margin-bottom: 20px;
 }

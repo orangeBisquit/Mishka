@@ -1,0 +1,67 @@
+.sup-nav {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::before {
+      @include beforeafter;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: $content-header-bg;
+    }
+
+    &::after {
+      @include beforeafter;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: $header-border;
+    }
+  }
+}
+
+.sup-nav__inner {
+  @media (min-width: $desktop-width) {
+    width: $content-desktop;
+    margin: 0 auto;
+  }
+}
+
+.sup-nav__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 350px;
+    padding: 15px 0;
+    width: 700px;
+  }
+}
+
+.sup-nav__link {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-right: 63px;
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: $text-color-dark;
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
