@@ -1,0 +1,18 @@
+.order-custom__description {
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 30px;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 105px auto 0;
+    width: 702px;
+  }
+}

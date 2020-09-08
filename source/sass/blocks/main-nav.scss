@@ -1,0 +1,100 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      @include beforeafter;
+      top: 0;
+      left: calc(-1 * (100vw - #{$content-tablet}) / 2);
+      z-index: -1;
+      border-top: 1px solid rgba($text-color, 0.1);
+      width: 100vw;
+      height: 100%;
+      background-color: $content-header-bg;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-right: -30px; /* Для компенсации MR ссылок */
+    padding: 19px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.main-nav__item {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-bottom: 26px;
+  }
+
+  &:first-child {
+    @media (min-width: $desktop-width) {
+      border-right: 1px solid rgba($text-color-dark, 0.1);
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 26px;
+  padding-left: 46px;
+  width: 260px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-color-dark;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 38px;
+    padding: 5px 0;
+    width: auto;
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--order {
+    @media (min-width: $desktop-width) {
+      margin-left: 35px;
+    }
+  }
+}

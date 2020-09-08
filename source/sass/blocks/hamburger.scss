@@ -1,0 +1,57 @@
+.hamburger {
+  display: block;
+  position: absolute;
+  top: 9px;
+  right: 31px;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 18px;
+  background-color: $bg-color;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $text-color;
+    outline-offset: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $text-color-dark;
+    margin-bottom: 4px;
+    transition: 0.5s all;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+.hamburger--active {
+  top: 3px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+
+  span {
+    margin-bottom: -2px;
+  }
+
+  span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+
+  span:nth-child(2) {
+    display: none;
+  }
+
+  span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+}

@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  border: 2px solid $text-color;
+  padding: 16px;
+  width: 100%;
+  background-color: $bg-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $text-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 17px;
+  }
+
+  &:hover {
+    color: $bg-color;
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: rgba($bg-color, 0.3);
+  }
+
+  &--sm {
+    font-size: 17px;
+    line-height: 17px;
+  }
+}

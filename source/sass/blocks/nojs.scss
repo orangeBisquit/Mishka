@@ -1,0 +1,17 @@
+.nojs__top-toggle,
+.nojs__bottom-toggle {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.nojs__top-show,
+.nojs__bottom-show {
+  display: block;
+}
+
+.nojs__header-toggle {
+  display: none;
+}

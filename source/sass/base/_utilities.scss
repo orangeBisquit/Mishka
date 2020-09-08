@@ -1,20 +1,31 @@
-<<<<<<< HEAD
-.visually-hidden:not(:focus):not(:active) {
-=======
 .visually-hidden {
->>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
-	position: absolute;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	white-space: nowrap;
-<<<<<<< HEAD
-	-webkit-clip-path: inset(100%);
-=======
->>>>>>> d5be8a6072a32c01f1853482d4e0aca9a89ad6f3
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: $content-mobile;
+
+  @media (min-width: $tablet-width) {
+    width: $content-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $content-desktop;
+  }
 }
