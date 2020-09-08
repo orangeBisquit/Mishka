@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-  <header class="header page-body__header">
+  <header class="header page-body__header nojs">
     <div class="header__inner">
       <a class="header__logo" href="index.html" tabindex="1">
         <picture>
@@ -68,7 +68,6 @@
         </ul>
       </div>
     </div>
-    </div>
   </header>
   <main>
     <section class="content-header content-header--catalog">
@@ -81,6 +80,12 @@
             <article class="catalog__card product-card">
               <a class="product-card__link-image" href="product-rabbit.html">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1150px)" srcset="
                         img/photo-hare-desktop@1x.jpg 1x,
                         img/photo-hare-desktop@2x.jpg 2x
@@ -110,6 +115,12 @@
             <article class="catalog__card product-card">
               <a class="product-card__link-image" href="product-basket.html">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1150px)" srcset="
                         img/photo-bowl-desktop@1x.jpg 1x,
                         img/photo-bowl-desktop@2x.jpg 2x
@@ -142,6 +153,12 @@
             <article class="catalog__card product-card">
               <a class="product-card__link-image" href="product-basket-toys.html">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1150px)" srcset="
                         img/photo-toys-desktop@1x.jpg 1x,
                         img/photo-toys-desktop@2x.jpg 2x
@@ -180,6 +197,12 @@
             Процесс производства
           </h1>
           <picture class="production__video-wrapper">
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)" srcset="
                   img/video-desktop@1x.jpg 1x,
                   img/video-desktop@2x.jpg 2x
@@ -204,7 +227,7 @@
     <div class="footer__inner">
       <div class="footer__logo-wrapper">
         <a href="#" class="footer__logo">
-          <svg class="footer__logo-img" width="102" height="34" alt="Логотип магазина Mishka">
+          <svg class="footer__logo-img" width="102" height="34">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
@@ -247,7 +270,7 @@
     <div class="pick-size__window">
       <h1 class="pick-size__title">Добавить в корзину</h1>
       <form class="pick-size__form" method="get" action="https://echo.htmlacademy.ru">
-        <legend class="pick-size__legend">Выберите размер:</legend>
+        <p class="pick-size__legend">Выберите размер:</p>
         <div class="pick-size__wrapper">
           <p class="pick-size__option">
             <input class="pick-size__input" id="size-small" type="radio" value="small" name="product-size">
